@@ -31,7 +31,7 @@
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
-        "barryvdh/laravel-ide-helper": "^2.6",
+        "barryvdh/laravel-ide-helper": "^2.12",
         "brianium/paratest": "^6.2",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
@@ -98,7 +98,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "treeware/plant": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

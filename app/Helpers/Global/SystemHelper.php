@@ -9,9 +9,11 @@ if (! function_exists('includeFilesInFolder')) {
      */
     function includeFilesInFolder($folder)
     {
-        try {
+        try {  
             $rdi = new RecursiveDirectoryIterator($folder);
+            // dd($rdi);
             $it = new RecursiveIteratorIterator($rdi);
+            // dd($it->key());
 
             while ($it->valid()) {
                 if (! $it->isDot() && $it->isFile() && $it->isReadable() && $it->current()->getExtension() === 'php') {
@@ -32,7 +34,7 @@ if (! function_exists('includeRouteFiles')) {
      * @param $folder
      */
     function includeRouteFiles($folder)
-    {
+    { 
         includeFilesInFolder($folder);
     }
 }

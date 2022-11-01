@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Domains\Auth\Http\Controllers\Frontend\Auth\ConfirmPasswordController;
 use App\Domains\Auth\Http\Controllers\Frontend\Auth\DisableTwoFactorAuthenticationController;
 use App\Domains\Auth\Http\Controllers\Frontend\Auth\ForgotPasswordController;
